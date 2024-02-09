@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Tabla</title>
         <link rel="stylesheet" href="css/verTabla.css" type="text/css" />
     </head>
     <body>
@@ -138,5 +138,6 @@
                 </tbody>
             </table>
         </div>
+        <p>Pulsa <a href="index.jsp">aquí</a> para ver el origen.</p>
     </body>
 </html>
