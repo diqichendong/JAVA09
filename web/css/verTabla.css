@@ -6,6 +6,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Created on : 9 feb. 2024, 16:47:24
     Author     : AndJe
 */
+body {
+    padding: 2% 5%;
+    margin: 50px 0px;
+}
 
 td {
     display: table-cell;
@@ -23,7 +27,7 @@ tr:nth-child(even){
     background-color: lime;
 }
 
-tr:hover{
+tbody tr:hover{
     color: blue;
 }
 

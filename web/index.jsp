@@ -25,13 +25,13 @@
         <div>
             <form action="verZodiaco.jsp">
                 <label for="nombre">Nombre: </label>
-                <input type="text" name="nombre" id="nombre" />
+                <input type="text" name="nombre" id="nombre" required />
                 <br>
                 <label for="apellidos">Apellidos: </label>
-                <input type="text" name="apellidos" id="apellidos" />
+                <input type="text" name="apellidos" id="apellidos" required />
                 <br>
                 <label for="f_nac">Fecha de nacimiento: </label>
-                <input type="date" name="f_nac" id="f_nac" />
+                <input type="date" name="f_nac" id="f_nac" required />
                 <br>
                 <input type="submit" value="Ver el zodiaco" />
             </form>
