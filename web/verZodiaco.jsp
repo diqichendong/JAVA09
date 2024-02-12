@@ -5,8 +5,8 @@
 --%>
 
     <%@page contentType="text/html" pageEncoding="UTF-8"%>
-    <%@ page import="java.util.Date" %>
-    <%@ page import="java.text.SimpleDateFormat" %>
+    <%@ page import="java.time.LocalDate" %>
+    <%@ page import="java.time.format.DateTimeFormatter" %>
     <%@ page import="beans.Zodiaco" %>
     <!DOCTYPE html>
     <html>
@@ -22,8 +22,8 @@
         <%-- clock.setFecha(param.f_nac); --%>
         <% 
             String fechaString = request.getParameter("f_nac");
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-            Date fechaDate = dateFormat.parse(fechaString);
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+            LocalDate fechaDate = LocalDate.parse(fechaString, formatter);
 
             clock.setFecha(fechaDate);
         %>
